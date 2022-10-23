@@ -4,19 +4,40 @@ public class Fatura
     private double valorTotal;
     private String nomeCliente;
 
-
-    public Object getData()
+    public Fatura(String data, double valorTotal, String nomeCliente)
     {
-        return this.data;
+        this.data = data;
+        this.valorTotal = valorTotal;
+        this.nomeCliente = nomeCliente;
     }
 
-    public Object getValorTotal()
+    public String getData()
     {
-        return this.valorTotal;
+        return data;
     }
 
-    public Object getNomeCliente()
+    public void setData(String data)
     {
-        return this.nomeCliente;
+        this.data = data;
+    }
+
+    public double getValorTotal()
+    {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal)
+    {
+        this.valorTotal = valorTotal;
+    }
+
+    public String getNomeCliente()
+    {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente)
+    {
+        this.nomeCliente = nomeCliente;
     }
 }
