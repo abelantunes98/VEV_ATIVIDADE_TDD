@@ -2,25 +2,25 @@ package src;
 
 public class Funcionario {
 
-	private String name;
+	private String nome;
 	private String email;
-	private float salary;
-	private String job;
+	private float salario;
+	private String cargo;
 
-	public Funcionario(String name, String email, float salary , String job) {
+	public Funcionario(String nome, String email, float salario , String cargo) {
 		
-		this.name = name;
+		this.nome = nome;
 		this.email = email;
-		this.salary = salary;
-		this.job = job;
+		this.salario = salario;
+		this.cargo = cargo;
 	}
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getEmail() {
@@ -31,20 +31,20 @@ public class Funcionario {
 		this.email = email;
 	}
 
-	public float getSalary() {
-		return salary;
+	public float getSalario() {
+		return salario;
 	}
 
-	public void setSalary(float salary) {
-		this.salary = salary;
+	public void setSalario(float salario) {
+		this.salario = salario;
 	}
 
-	public String getJob() {
-		return job;
+	public String getCargo() {
+		return cargo;
 	}
 
-	public void setJob(String job) {
-		this.job = job;
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 
 }

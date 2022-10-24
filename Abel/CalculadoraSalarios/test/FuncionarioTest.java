@@ -13,8 +13,8 @@ public class FuncionarioTest {
 	
 	Funcionario funcionario = new Funcionario("Abel", "abel@email.com", 500, "DESENVOLVEDOR");
 	@Test
-    public void getNameTest(){
-        assertEquals("Abel", funcionario.getName());
+    public void getNomeTest(){
+        assertEquals("Abel", funcionario.getNome());
     }
 	
 	@Test
@@ -23,19 +23,19 @@ public class FuncionarioTest {
     }
 	
 	@Test
-    public void getSalaryTest(){
-        assertEquals(500, funcionario.getSalary());
+    public void getSalarioTest(){
+        assertEquals(500, funcionario.getSalario());
     }
 	
 	@Test
-    public void getJobTest(){
-        assertEquals("DESENVOLVEDOR", funcionario.getJob());
+    public void getCargoTest(){
+        assertEquals("DESENVOLVEDOR", funcionario.getCargo());
     }
 	
 	@Test
-    public void setNameTest(){
-		funcionario.setName("Joao");
-        assertEquals("Joao", funcionario.getName());
+    public void setNomeTest(){
+		funcionario.setNome("Joao");
+        assertEquals("Joao", funcionario.getNome());
     }
 	
 	@Test
@@ -45,14 +45,14 @@ public class FuncionarioTest {
     }
 	
 	@Test
-    public void setSalaryTest(){
-		funcionario.setSalary(1000);
-        assertEquals(1000, funcionario.getSalary());
+    public void setSalarioTest(){
+		funcionario.setSalario(1000);
+        assertEquals(1000, funcionario.getSalario());
     }
 	
 	@Test
     public void setJobTest(){
-		funcionario.setJob("DBA");
-        assertEquals("DBA", funcionario.getJob());
+		funcionario.setCargo("DBA");
+        assertEquals("DBA", funcionario.getCargo());
     }
 }
