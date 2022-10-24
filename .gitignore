@@ -2,3 +2,8 @@ out/
 .idea
 
 .VEV_ATIVIDADE_TDD.iml
+/Abel/nbproject/private/
+/Abel/build/
+/CalculadoraSalario/nbproject/private/
+/CalculadoraSalario/build/
+/.metadata/
