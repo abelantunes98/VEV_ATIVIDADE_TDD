@@ -2,6 +2,8 @@ package test;
 
 import org.junit.jupiter.api.Test;
 
+import src.Funcionario;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FuncionarioTest {
@@ -50,7 +52,7 @@ public class FuncionarioTest {
 	
 	@Test
     public void setJobTest(){
-		funcionario.setName("DBA");
+		funcionario.setJob("DBA");
         assertEquals("DBA", funcionario.getJob());
     }
 }
