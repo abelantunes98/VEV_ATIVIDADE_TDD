@@ -7,8 +7,8 @@ public class Funcionario {
 	private float salario;
 	private String cargo;
 
-	public Funcionario(String nome, String email, float salario , String cargo) {
-		
+	public Funcionario(String nome, String email, float salario, String cargo) {
+
 		this.nome = nome;
 		this.email = email;
 		this.salario = salario;
