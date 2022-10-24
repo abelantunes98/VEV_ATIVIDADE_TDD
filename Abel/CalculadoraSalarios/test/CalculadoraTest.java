@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+import src.Calculadora;
 import src.Funcionario;
 
 public class CalculadoraTest {
@@ -41,11 +42,11 @@ public class CalculadoraTest {
 	
 	// Verificando salario de desenvolvedor que se tornou gerente
 	@Test
-    public void calculaSalarioGerenteTest(){
+    public void calculaSalarioAlteraCargoTest(){
 		Funcionario funcionario5 = new Funcionario("Pedro", "pedro@email.com", 15000, "DESENVOLVEDOR");
 		assertEquals(12000, calculadora.calculaSalario(funcionario5.getSalario(), funcionario5.getCargo()));
 		
 		funcionario5.setCargo("GERENTE");
-		assertEquals(7500, calculadora.calculaSalario(funcionario5.getSalario(), funcionario5.getCargo()));
+		assertEquals(10500, calculadora.calculaSalario(funcionario5.getSalario(), funcionario5.getCargo()));
     }
 }
